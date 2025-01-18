@@ -55,6 +55,9 @@ a.text-primary {
   a.text-primary:hover {
     color: #000 !important; }
 
+.spaced-text {
+  letter-spacing: 0.1em; }
+
 .bg-primary {
   background-color: #000 !important; }
 
@@ -158,6 +161,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: bold; }
   .logo a {
     color: #000; }
+
+    .service-image {
+      height: 200px; /* Set to match the height of your other images */
+      width: auto;   /* Allow width to adjust based on aspect ratio */
+  }
+  
+  .preserve-ratio {
+      object-fit: contain; /* Ensures the entire image is visible */
+  }
 
 .menu-absolute {
   position: absolute;
