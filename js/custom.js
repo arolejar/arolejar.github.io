@@ -17,14 +17,14 @@
 		}
 	});
 
-	// Keep only AOS initialization if you're using it
+	// Initialize AOS
 	AOS.init({
 		duration: 800,
 		easing: 'slide',
 		once: true
 	});
 
-	// Keep Jarallax if you're using it for parallax effects
+	// Jarallax for parallax effects
 	jarallax(document.querySelectorAll('.jarallax'));
 
 	// Remove any other initializations for unused features
