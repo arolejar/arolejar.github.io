@@ -33,31 +33,31 @@
   <div class="abode-container">
     <header class="abode-header">
       <a href="index.html" class="logo">
-        <img src="images/logoCropped.png" alt="Catherine O Design">
+        <img src="images/catherine-o-logo.png" alt="Catherine O Design">
       </a>
       <nav class="abode-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Work</a></li>
+          <!-- <li><a href="portfolio.html">Work</a></li> -->
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="abode-hero">
-        <h1 class="hero-title">catherine o design</h1>
+        <h1 class="hero-title">CATHERINE O DESIGN</h1>
         <p class="hero-subtitle">architectural collaboration / interiors / custom furniture</p>
       </section>
 
       <section class="abode-showcase">
         <div class="showcase-text">
-          <h2 class="main-statement">A national full-service design firm based in Charleston, South Carolina. With a refined, considered approach, we create timeless interiors tailored to each client.</h2>
+          <h2 class="main-statement">A boutique design firm in Charleston, South Carolina, with a focus on luxury residential renovations and ground-up new construction.</h2>
         </div>
         <div class="image-wrapper">
-          <img src="images/img_v_5-min.jpg" alt="Catherine O Design - Interior Design" class="image-hover-effect">
+          <img src="images/charleston-kitchen.png" alt="Catherine O Design - Interior Design" class="image-hover-effect">
         </div>
       </section>
-
+<!--
       <section class="abode-icons">
         <div class="icon-wrap">
           <svg viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M15 15 L35 15 L32 5 L18 5 Z"/><path d="M25 15 L25 35"/><path d="M20 35 L30 35"/><circle cx="25" cy="40" r="2"/><path d="M25 35 L25 38"/></svg>
@@ -72,34 +72,45 @@
           <svg viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M35 40 L35 20 C35 12 25 12 25 20 L25 25"/><path d="M32 40 L38 40"/><path d="M15 30 L15 35"/><path d="M10 30 L20 30"/><path d="M12 35 L18 35 L18 40 L12 40 Z"/><path d="M23 25 L27 25 L26 28 L24 28 Z"/><path d="M25 28 L25 32" stroke-dasharray="2 2"/></svg>
         </div>
       </section>
+      -->
 
       <section class="abode-contact">
         <h2 class="abode-contact-heading font-serif">Contact</h2>
-        <form action="https://formspree.io/f/xnnqyppy" method="POST">
-          <div class="row">
-          <div class="col-md-6">
-            <div class="form-group mb-3">
-              <label class="abode-label" for="fname">First name</label>
-              <input type="text" class="form-control" id="fname" name="firstname" placeholder=" ">
+        <div class="abode-contact-info">
+          <a href="mailto:catherine@catherineodesign.com" class="abode-contact-link">catherine@catherineodesign.com</a>
+          <button type="button" class="abode-inquiry-btn" id="design-inquiry-btn" aria-expanded="false">design inquiry</button>
+          <a href="https://instagram.com/catherineodesign" target="_blank" rel="noopener noreferrer" class="abode-contact-link abode-contact-ig">
+            @catherineodesign
+            <svg class="abode-ig-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+        <div class="abode-contact-form" id="abode-contact-form" hidden>
+          <form action="https://formspree.io/f/xnnqyppy" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+                  <label class="abode-label" for="fname">First name</label>
+                  <input type="text" class="form-control" id="fname" name="firstname" placeholder=" ">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+                  <label class="abode-label" for="lname">Last name</label>
+                  <input type="text" class="form-control" id="lname" name="lastname" placeholder=" ">
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
             <div class="form-group mb-3">
-              <label class="abode-label" for="lname">Last name</label>
-              <input type="text" class="form-control" id="lname" name="lastname" placeholder=" ">
+              <label class="abode-label" for="email">Email address</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder=" ">
             </div>
-          </div>
-          </div>
-          <div class="form-group mb-3">
-            <label class="abode-label" for="email">Email address</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder=" ">
-          </div>
-          <div class="form-group mb-3">
-            <label class="abode-label" for="message">Message</label>
-            <textarea name="message" class="form-control" id="message" rows="5" placeholder=" "></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+            <div class="form-group mb-3">
+              <label class="abode-label" for="message">Message</label>
+              <textarea name="message" class="form-control" id="message" rows="5" placeholder=" "></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
       </section>
 
       <footer class="abode-footer">
@@ -146,6 +157,17 @@
           opacity: 1,
           y: 0,
           duration: 1
+        });
+      }
+      var inquiryBtn = document.getElementById('design-inquiry-btn');
+      var contactForm = document.getElementById('abode-contact-form');
+      if (inquiryBtn && contactForm) {
+        inquiryBtn.addEventListener('click', function() {
+          contactForm.removeAttribute('hidden');
+          contactForm.classList.add('is-visible');
+          inquiryBtn.setAttribute('aria-expanded', 'true');
+          var firstInput = contactForm.querySelector('#fname');
+          if (firstInput) firstInput.focus();
         });
       }
     });
