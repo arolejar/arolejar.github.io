@@ -177,10 +177,13 @@
   }
 }
 .theme-abode .main-statement {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 3vw, 2rem);
   line-height: 1.2;
   color: #E4D5C9;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .theme-abode .main-statement { font-size: clamp(1.5rem, 3vw, 2rem); }
 }
 @media (min-width: 992px) {
   .theme-abode .main-statement { text-align: left; }
@@ -233,11 +236,14 @@
 
 /* Contact section */
 .theme-abode .abode-contact-heading {
-  font-size: clamp(3rem, 10vw, 3.5rem);
+  font-size: clamp(2rem, 7vw, 2.6rem);
   font-weight: 300;
   margin-bottom: 2rem;
   opacity: 0.95;
   text-align: right;
+}
+@media (min-width: 768px) {
+  .theme-abode .abode-contact-heading { font-size: clamp(3rem, 10vw, 3.5rem); }
 }
 .theme-abode .abode-contact {
   margin-top: auto;
