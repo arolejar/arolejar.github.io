@@ -139,10 +139,13 @@
   .theme-abode .abode-hero { margin-bottom: 8rem; }
 }
 .theme-abode .hero-title {
-  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-size: clamp(2rem, 7vw, 2.6rem);
   margin-bottom: 1rem;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+@media (min-width: 768px) {
+  .theme-abode .hero-title { font-size: clamp(2.5rem, 8vw, 2.5rem); }
 }
 .theme-abode .hero-subtitle {
   font-size: 0.65rem;
