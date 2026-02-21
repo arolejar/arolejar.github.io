@@ -1004,7 +1004,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       transform: scale(1); }
     .isotope-card > a:hover:before {
       visibility: visible;
-      opacity: 1; }
+      opacity: 0; }
     .isotope-card > a:hover img {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);

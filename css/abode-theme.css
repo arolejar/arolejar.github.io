@@ -395,3 +395,101 @@
 /* Loader overlay - match brown */
 .theme-abode #overlayer { background: #785641 !important; }
 .theme-abode .spinner-border { color: rgba(228, 213, 201, 0.9); }
+
+/* Page-Specific Override: Portfolio Only */
+
+/* This targets the hero spacing only when .portfolio-page is present on the body */
+.portfolio-page .abode-hero {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-page .abode-hero {
+    margin-bottom: 3.5rem; /* Adjusted desktop spacing */
+  }
+}
+
+/* Neutralize the template's default section padding for the grid area */
+#portfolio-section.site-section {
+  padding-top: 0;
+  margin-top: 3rem; 
+}
+
+/* Optional: Tighten space specifically for the filter list */
+.portfolio-page .filters {
+  margin-bottom: 2.5rem !important;
+}
+
+/* Increase white space around portfolio images */
+.theme-abode .isotope-card {
+  padding: 15px; /* Adjust this number higher for more white space */
+}
+
+/* Ensure the hover effect and wrapper respect the new padding */
+.theme-abode .image-wrapper {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Optional: If you want the images even smaller on desktop */
+@media (min-width: 992px) {
+  .theme-abode .isotope-card {
+    padding: 40px; /* Large gutters for a high-end, editorial look */
+  }
+}
+
+/* =========================
+   Portfolio Masonry Layout
+   ========================= */
+
+.portfolio-page .grid {
+  column-count: 3;
+  column-gap: 2rem;
+}
+
+.portfolio-page .isotope-card {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Remove Bootstrap column sizing */
+.portfolio-page .isotope-card[class*="col-"] {
+  padding: 0;
+  flex: unset;
+  max-width: 100%;
+}
+
+/* Natural image ratios */
+.portfolio-page .image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+}
+
+/* Responsive column counts */
+@media (max-width: 991px) {
+  .portfolio-page .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-page .grid {
+    column-count: 1;
+  }
+}
+
+/* Fix: Round all 4 corners of the image instead of just the top */
+.theme-abode .isotope-card {
+  border-radius: 0 !important; /* Removes the template's top-only rounding */
+}
+
+.theme-abode .image-wrapper {
+  border-radius: 5px;          /* Applies the 5px radius to all 4 corners */
+  overflow: hidden;            /* Ensures the image clips to those corners */
+  margin-bottom: 0 !important; /* Removes any remaining gap below the image */
+}
